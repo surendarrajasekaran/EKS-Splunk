@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployapp
+  labels:
+    app: splunk
+spec:
+  replicas: 5 
+  selector:
+    matchLabels:
+      app: splunk
+  template:
+    metadata:
+      labels:
+        app: splunk
+    spec:
+      containers:
+      - name: splunk
+        image: 897240014224.dkr.ecr.us-west-2.amazonaws.com/nxp-splunk:latest
+        ports:
+        - containerPort: 8000
