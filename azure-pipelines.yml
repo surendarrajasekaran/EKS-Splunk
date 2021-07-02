@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: surendar-r
 
 steps:
 - script: echo Hello, world!
