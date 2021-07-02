@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: 'surendar-r'
+pool: surendar-r
 
 steps:
 - script: echo Hello, world!
